@@ -7,7 +7,29 @@ const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
     <div>
-    <h3>Please use this form to place your order!</h3>
+    <div>
+      <h4>Available Flavors</h4>
+      <ul>
+        <li>Taro</li>
+        <li>Green Tea</li>
+        <li>Milk Tea</li>
+        <li>Thai Tea</li>
+        <li>Vietnamese Coffee (fan favorite)</li>
+        <li>Pandan Coconut</li>
+      </ul>
+      <p>Assorted dozens will come with two of each flavor but we also allow you to customize your order and pick and choose which flavors you want!</p>
+    </div>
+    <div>
+      <h4>Pricing</h4>
+      <ul>
+        <li>$17 for 1 dozen</li>
+        <li>$15 per dozen when ordering 2 or more</li>
+        <li>Pickup is free</li>
+        <li>Delivery fee of $2 in southeast Aurora</li>
+        <li>Delivery fee of $3 outside southeast Aurora</li>
+      </ul>
+    </div>
+    <h4>Please use this form to place your order!</h4>
       <form className='order' name="order" method="post" action="/success" data-netlify="true" data-netlify-honeypot="bot-field">
         <input type="hidden" name="bot-field" />
         <input type="hidden" name="form-name" value="order"/>
@@ -35,8 +57,8 @@ const IndexPage = () => (
           <div className='order__holder--label'>Quantity</div>
           <select className='order__holder--input' name="quantity" required>
           <option value="1 dozen">1 dozen</option>
-          <option value="2 dozens">2 dozens</option>
-          <option value="3 dozens">3 dozens</option>
+          <option value="2 dozens">2 dozen</option>
+          <option value="3 dozens">3 dozen</option>
           <option value="4+ dozens">4+ dozens (specify amount below)</option>
           </select>
         </div>
