@@ -2,9 +2,9 @@ import React, { useState } from "react"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Slide1 from '../components/slides/slide1'
-import Slide2 from '../components/slides/slide2'
-import Slide3 from '../components/slides/slide3'
+import donuts from '../images/donuts.jpeg'
+import donutsClose from '../images/donutsClose.jpeg'
+import donutsPacked from '../images/donutsPacked.jpeg'
 
 const IndexPage = () => {
 const [ slide, setSlide ] = useState(1)
@@ -41,9 +41,27 @@ return (
         <li className='body__info--list--items'>Pandan Coconut</li>
       </ul>
       <p className='body__info--details'>Assorted dozens will come with two of each flavor but we also allow you to customize your order and pick and choose which flavors you want!</p>
-      {slide === 1 ? <Slide1/> : null} 
-      {slide === 2 ? <Slide2/> : null} 
-      {slide === 3 ? <Slide3/> : null}
+        {slide === 1
+          ? <div className="slideshow">
+            <div className="slideshow__slides slideshow__fade">
+              <img src={donuts} className='slideshow__slides--image' alt='Donuts on a Tray' />
+            </div>
+          </div>
+          : null}
+        {slide === 2
+          ? <div className="slideshow">
+            <div className="slideshow__slides slideshow__fade">
+              <img src={donutsPacked} className='slideshow__slides--image' alt='Donuts to go' />
+            </div>
+          </div>
+          : null}
+        {slide === 3
+          ? <div className="slideshow">
+            <div className="slideshow__slides slideshow__fade">
+              <img src={donutsClose} className='slideshow__slides--image' alt='Donuts to go' />
+            </div>
+          </div>
+          : null}
       <div className='btn'>
       <button className="btn__prev" onClick={prev}>&#10094;</button>
       <button className="btn__next" onClick={next}>&#10095;</button>
