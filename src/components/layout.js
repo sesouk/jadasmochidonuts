@@ -23,7 +23,7 @@ const Layout = ({ children }) => {
       >
         <img className='logo' src={logo} alt="Jada's Mochi Donuts Logo"/>
         <main>{children}</main>
-        <footer style={{ fontSize: '8pt' }}>
+        <footer style={{ fontSize: '8pt', marginTop: `1.5rem`,  position: `relative` }}>
           © {new Date().getFullYear()}, Built By
           {` `}
           <a style={{ color: 'black', textDecoration: 'none' }} href="https://sesouk.com">Kevin Sesouk Tran</a>
