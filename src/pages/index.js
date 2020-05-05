@@ -2,9 +2,9 @@ import React, { useState } from "react"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import donuts from '../images/donuts.jpeg'
-import donutsClose from '../images/donutsClose.jpeg'
-import donutsPacked from '../images/donutsPacked.jpeg'
+import donuts from '../images/donuts.jpg'
+import donutsClose from '../images/donutsClose.jpg'
+import donutsPacked from '../images/donutsPacked.jpg'
 
 const IndexPage = () => {
 const [ slide, setSlide ] = useState(1)

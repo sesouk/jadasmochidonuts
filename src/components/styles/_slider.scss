@@ -3,11 +3,11 @@
 
   &__slides {
     &--image {
-      width: 75%;
+      width: 85%;
       border-radius: .5rem;
       border: 2px solid #9b79b6;
       @include md {
-        width: 90%
+        width: 100%
       }
     }
   }
