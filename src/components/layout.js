@@ -11,7 +11,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import logo from '../images/jadasMochiDonuts_V1.png'
 
 import Header from "./header"
-import "./layout.css"
+import "./layout.scss"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -29,12 +29,16 @@ const Layout = ({ children }) => {
       {/* <Header siteTitle={data.site.siteMetadata.title} /> */}
       <div
         style={{
-          margin: `0 auto`,
+          margin: `2rem auto`,
           maxWidth: 960,
           padding: `0 1.0875rem 1.45rem`,
         }}
       >
-        <img src={logo} alt="Jada's Mochi Donuts Logo"/>
+        <img style={{
+            display: `block`,
+            margin: `0 auto 1.45rem auto`,
+            width: `75%`
+        }} src={logo} alt="Jada's Mochi Donuts Logo"/>
         <main>{children}</main>
         <footer>
           © {new Date().getFullYear()}, Built By

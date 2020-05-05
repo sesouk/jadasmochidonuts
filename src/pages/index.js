@@ -24,9 +24,8 @@ const IndexPage = () => (
       <ul>
         <li>$17 for 1 dozen</li>
         <li>$15 per dozen when ordering 2 or more</li>
-        <li>Pickup is free</li>
-        <li>Delivery fee of $2 in southeast Aurora</li>
-        <li>Delivery fee of $3 outside southeast Aurora</li>
+        <li>Curbside pickup is free</li>
+        <li>Delivery fee of $2-$4 will apply depending on location</li>
       </ul>
     </div>
     <h4>Please use this form to place your order!</h4>
@@ -43,19 +42,19 @@ const IndexPage = () => (
         </div>
         <div>
           <input className='order__holder--input' type="radio" name="delivery/pickup" value='delivery' required/>
-            <label for='delivery'>Delivery</label>
+            <span>Delivery</span>
           <input className='order__holder--input' type="radio" name="delivery/pickup" value='pickup' required/>
-            <label for='pickup'>Pickup</label>
+            <span for='pickup'>Pickup</span>
         </div>
         <div>
-          <input className='order__holder--input' type="radio" name="assorted/specific" value='assorted' required/>
-            <label for='assorted'>Assorted</label>
-          <input className='order__holder--input' type="radio" name="assorted/specific" value='specific' required/>
-            <label for='specific'>Specific</label>
+          <input className='order__holder--radio' type="radio" name="assorted/specific" value='assorted' required/>
+            <span for='assorted'>Assorted</span>
+          <input className='order__holder--radio' type="radio" name="assorted/specific" value='specific' required/>
+            <span for='specific'>Specific</span>
         </div>
         <div>
           <div className='order__holder--label'>Quantity</div>
-          <select className='order__holder--input' name="quantity" required>
+          <select className='order__holder--dropdown' name="quantity" required>
           <option value="1 dozen">1 dozen</option>
           <option value="2 dozens">2 dozen</option>
           <option value="3 dozens">3 dozen</option>
@@ -64,7 +63,7 @@ const IndexPage = () => (
         </div>
         <div>
           <div className='order__holder--label'>Payment method</div>
-          <select className='order__holder--input' name="quantity" required>
+          <select className='order__holder--dropdown' name="quantity" required>
           <option value="cash">Cash</option>
           <option value="venmo">Venmo</option>
           <option value="zelle">Zelle</option>
