@@ -1,0 +1,41 @@
+html {
+  font-family: sans-serif;
+}
+
+body {
+  margin: 0 auto;
+  font-size: 14pt;
+  background: rgb(155,121,182);
+  background: linear-gradient(55deg, rgba(155,121,182,1) 5%, rgba(248,180,192,1) 50%, rgba(177,166,200,1) 95%);
+}
+
+.logo {
+  display: block;
+  margin: 0 auto 1.45rem auto;
+  width: 70%;
+  
+  @include md {
+    width: 50%
+  }
+}
+
+.body {
+ &__info {
+   &--title {
+    margin-bottom: 1.45rem;
+    text-rendering: optimizeLegibility;
+    font-size: 20pt;
+   }
+   &--list {
+    margin-bottom: 1.45rem;
+    list-style-position: outside;
+    list-style-image: none;
+     &--items {
+      margin-bottom: calc(1.45rem / 2);
+     }
+   }
+   &--details {
+    margin: 0 0 1.45rem 0;
+   }
+ }
+}

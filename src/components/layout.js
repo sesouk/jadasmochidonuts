@@ -10,8 +10,7 @@ import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 import logo from '../images/jadasMochiDonuts_V1.png'
 
-import Header from "./header"
-import "./layout.scss"
+import "./styles/layout.scss"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -26,7 +25,6 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      {/* <Header siteTitle={data.site.siteMetadata.title} /> */}
       <div
         style={{
           margin: `2rem auto`,
@@ -34,16 +32,12 @@ const Layout = ({ children }) => {
           padding: `0 1.0875rem 1.45rem`,
         }}
       >
-        <img style={{
-            display: `block`,
-            margin: `0 auto 1.45rem auto`,
-            width: `75%`
-        }} src={logo} alt="Jada's Mochi Donuts Logo"/>
+        <img className='logo' src={logo} alt="Jada's Mochi Donuts Logo"/>
         <main>{children}</main>
-        <footer>
+        <footer style={{ fontSize: '8pt' }}>
           © {new Date().getFullYear()}, Built By
           {` `}
-          <a href="https://sesouk.com">Kevin Sesouk Tran</a>
+          <a style={{ color: 'black', textDecoration: 'none' }} href="https://sesouk.com">Kevin Sesouk Tran</a>
         </footer>
       </div>
     </>
