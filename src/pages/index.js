@@ -119,7 +119,7 @@ return (
           </select>
         </div>
         <div>
-          <div className='order__holder--label'>Additional info or flavor choices here:</div>
+          <div className='order__holder--label'>Additional info or flavor choices:</div>
           <textarea className="order__holder--addInfo" type="text" name="details" />
         </div>
         <div className="order__btnHldr">
