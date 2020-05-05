@@ -10,7 +10,7 @@ const Success = () => (
     <div style={{ textAlign: `center` }}>
 
     <h1>Your order has been placed successfully!</h1>
-    <p>Awesome we've received your request and will contact you soon for payment and address for delivery (if applicable). Please allow 24-48 hours for your donuts to be ready. Thank you for the support!</p>
+    <p>Awesome, we've received your request and will contact you soon for payment and address for delivery (if applicable). Please allow 24-48 hours for your donuts to be ready. Thank you for the support!</p>
     <Link style={{ color: `black`, textDecoration: `none` }} to="/">Go back to the homepage</Link>
     </div>
   </Layout>
