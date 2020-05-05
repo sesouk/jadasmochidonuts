@@ -16,7 +16,7 @@ const IndexPage = () => (
           <input className='order__holder--input' type="text" name="name" required/>
         </div>
         <div>
-          <div className='order__holder--label'>order #</div>
+          <div className='order__holder--label'>Phone #</div>
           <input className='order__holder--input' type="tel" name="phone" required/>
         </div>
         <div>
