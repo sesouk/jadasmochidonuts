@@ -111,7 +111,7 @@ return (
         </div>
         <div>
           <div className='order__holder--label'>Payment Method:</div>
-          <select className='order__holder--dropdown' name="quantity" required>
+          <select className='order__holder--dropdown' name="payment" required>
           <option value="cash">Cash</option>
           <option value="venmo">Venmo</option>
           <option value="zelle">Zelle</option>
