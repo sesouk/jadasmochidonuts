@@ -31,6 +31,9 @@ return (
     <SEO title="Home" />
     <div className='body'>
     <div className='body__info'>
+    <h4 className='body__info--title'>Mother's Day Special!</h4>
+        
+      <strong className='body__info--details'>2 free mango donuts with every dozen so you can try our latest flavor!</strong>
       <h4 className='body__info--title'>Available Flavors</h4>
       <ul className='body__info--list'>
         <li className='body__info--list--items'>Taro</li>
