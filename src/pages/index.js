@@ -39,8 +39,9 @@ return (
         <li className='body__info--list--items'>Thai Tea</li>
         <li className='body__info--list--items'>Vietnamese Coffee (fan favorite)</li>
         <li className='body__info--list--items'>Pandan Coconut</li>
+        <li className='body__info--list--items'>Mango</li>
       </ul>
-      <p className='body__info--details'>Assorted dozens will come with two of each flavor but we also allow you to customize your order and pick and choose which flavors you want!</p>
+      <p className='body__info--details'>Assorted dozens will come with 6 flavors, two of each flavor of your choice. We also allow you to customize your order to pick and choose if you want more of a certain flavor!</p>
         {slide === 1
           ? <div className="slideshow">
             <div className="slideshow__slides slideshow__fade">
@@ -119,7 +120,8 @@ return (
           </select>
         </div>
         <div>
-          <div className='order__holder--label'>Additional info or flavor choices:</div>
+          <div className='order__holder--label'>Address for delivery, flavor choices,</div>
+          <div className='order__holder--label'>any other additional info:</div>
           <textarea className="order__holder--addInfo" type="text" name="details" />
         </div>
         <div className="order__btnHldr">
