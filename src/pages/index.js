@@ -109,7 +109,7 @@ return (
           <option value="1 dozen">1 dozen</option>
           <option value="2 dozens">2 dozen</option>
           <option value="3 dozens">3 dozen</option>
-          <option value="4+ dozens">4+ dozens (specify amount below)</option>
+          <option value="4+ dozens">4+ dozen (specify amount below)</option>
           </select>
         </div>
         <div>
@@ -129,6 +129,7 @@ return (
         <div className="order__btnHldr">
           <button type="submit" className="order__btnHldr--btn">Place order</button>
         </div>
+        <small className='body__info--details'>*Note orders will be ready in 24-48 hours</small>
        </form>
        </div> 
   </Layout>
