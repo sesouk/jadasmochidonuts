@@ -3,6 +3,8 @@ import React, { useState } from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import donuts from '../images/donuts.jpg'
+import donutsFancy from '../images/donutsFancy.png'
+import donutsToGo from '../images/donutsToGo.jpg'
 import donutsClose from '../images/donutsClose.jpg'
 import donutsPacked from '../images/donutsPacked.jpg'
 
@@ -11,7 +13,7 @@ const [ slide, setSlide ] = useState(1)
 
 const prev = () => {
   if( slide === 1 ) {
-    setSlide( 3 )
+    setSlide( 5 )
   }
   else {
     setSlide( slide - 1 )
@@ -19,7 +21,7 @@ const prev = () => {
 }
 
 const next = () => {
-  if( slide === 3 ) {
+  if( slide === 5 ) {
     setSlide( 1 )
   }
   else{
@@ -54,11 +56,25 @@ return (
         {slide === 2
           ? <div className="slideshow">
             <div className="slideshow__slides slideshow__fade">
-              <img src={donutsPacked} className='slideshow__slides--image' alt='Donuts to go' />
+              <img src={donutsFancy} className='slideshow__slides--image' alt='Donuts on a plate' />
             </div>
           </div>
           : null}
         {slide === 3
+          ? <div className="slideshow">
+            <div className="slideshow__slides slideshow__fade">
+              <img src={donutsToGo} className='slideshow__slides--image' alt='Lots of donuts to go' />
+            </div>
+          </div>
+          : null}
+        {slide === 4
+          ? <div className="slideshow">
+            <div className="slideshow__slides slideshow__fade">
+              <img src={donutsPacked} className='slideshow__slides--image' alt='Donuts to go' />
+            </div>
+          </div>
+          : null}
+        {slide === 5
           ? <div className="slideshow">
             <div className="slideshow__slides slideshow__fade">
               <img src={donutsClose} className='slideshow__slides--image' alt='Donuts to go' />
@@ -90,6 +106,10 @@ return (
         <div>
           <div className='order__holder--label'>Phone #:</div>
           <input className='order__holder--input' type="tel" name="phone" required/>
+        </div>
+        <div>
+          <div className='order__holder--label'>How'd you hear about us?</div>
+          <input className='order__holder--input' type="text" name="hearAboutUs" required/>
         </div>
         <div className='order__holder--radioHold'> 
           <input className='order__holder--radio' type="radio" name="delivery/pickup" value='delivery' required/>
