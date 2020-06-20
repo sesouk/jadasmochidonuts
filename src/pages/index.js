@@ -108,8 +108,9 @@ return (
           <input className='order__holder--input' type="tel" name="phone" required/>
         </div>
         <div>
-          <div className='order__holder--label'>How'd you hear about us?</div>
-          <input className='order__holder--input' type="text" name="hearAboutUs" required/>
+          <div className='order__holder--label'>New customers,</div>
+          <div className='order__holder--label'>how'd you hear about us?</div>
+          <input className='order__holder--input' type="text" name="hearAboutUs"/>
         </div>
         <div className='order__holder--radioHold'> 
           <input className='order__holder--radio' type="radio" name="delivery/pickup" value='delivery' required/>
