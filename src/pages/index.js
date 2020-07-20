@@ -44,6 +44,9 @@ return (
         <li className='body__info--list--items'>Mango</li>
         <li className='body__info--list--items'>Reese's Chocolate <small>*contains nuts*</small></li>
         <li className='body__info--list--items'>White Chocolate Almond <small>*contains nuts*</small></li>
+        <li className='body__info--list--items'>Oreo</li>
+        <li className='body__info--list--items'>Fruity Pebble's</li>
+        <li className='body__info--list--items'>Cinnamon Toast Crunch</li>
       </ul>
       <p className='body__info--details'>Assorted dozens will come with 6 flavors, two of each flavor of your choice. We also allow you to customize your order to pick and choose if you want more of a certain flavor!</p>
         {slide === 1
