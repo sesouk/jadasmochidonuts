@@ -33,22 +33,6 @@ return (
     <SEO title="Home" />
     <div className='body'>
     <div className='body__info'>
-      <h4 className='body__info--title'>Available Flavors</h4>
-      <ul className='body__info--list'>
-        <li className='body__info--list--items'>Taro</li>
-        <li className='body__info--list--items'>Green Tea</li>
-        <li className='body__info--list--items'>Brown Sugar Milk Tea</li>
-        <li className='body__info--list--items'>Thai Tea</li>
-        <li className='body__info--list--items'>Vietnamese Coffee <small>(fan favorite)</small></li>
-        <li className='body__info--list--items'>Pandan Coconut</li>
-        <li className='body__info--list--items'>Mango</li>
-        <li className='body__info--list--items'>Reese's Chocolate <small>*contains nuts*</small></li>
-        <li className='body__info--list--items'>White Chocolate Almond <small>*contains nuts*</small></li>
-        <li className='body__info--list--items'>Oreo</li>
-        <li className='body__info--list--items'>Fruity Pebble's</li>
-        <li className='body__info--list--items'>Cinnamon Toast Crunch</li>
-      </ul>
-      <p className='body__info--details'>Assorted dozens will come with 6 flavors, two of each flavor of your choice. We also allow you to customize your order to pick and choose if you want more of a certain flavor!</p>
         {slide === 1
           ? <div className="slideshow">
             <div className="slideshow__slides slideshow__fade">
@@ -88,15 +72,6 @@ return (
       <button className="btn__prev" onClick={prev}>&#10094;</button>
       <button className="btn__next" onClick={next}>&#10095;</button>
       </div>
-    </div>
-    <div className='body__info'>
-      <h4 className='body__info--title'>Pricing</h4>
-      <ul className='body__info--list'>
-        <li className='body__info--list--items'>$17 for 1 dozen</li>
-        <li className='body__info--list--items'>$15 per dozen when ordering 2 or more</li>
-        <li className='body__info--list--items'>Curbside pickup is free</li>
-        <li className='body__info--list--items'>Delivery fee of $2 - $8 will apply depending on location</li>
-      </ul>
     </div>
        </div> 
   </Layout>

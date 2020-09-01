@@ -7,11 +7,14 @@ import SEO from "../components/seo"
 const Success = () => (
   <Layout>
     <SEO title="Page two" />
-    <div style={{ textAlign: `center` }}>
-
-    <h1>Your order has been placed successfully!</h1>
-    <p>Awesome, we've received your request and will contact you soon for payment and address for delivery (if applicable). Please allow 24-48 hours for your donuts to be ready. Thank you for the support!</p>
-    <Link style={{ color: `black`, textDecoration: `none` }} to="/">Go back to the homepage</Link>
+    <div className='body__info'>
+      <h4 className='body__info--title'>Pricing</h4>
+      <ul className='body__info--list'>
+        <li className='body__info--list--items'>$17 for 1 dozen</li>
+        <li className='body__info--list--items'>$15 per dozen when ordering 2 or more</li>
+        <li className='body__info--list--items'>Curbside pickup is free</li>
+        <li className='body__info--list--items'>Delivery fee of $2 - $8 will apply depending on location</li>
+      </ul>
     </div>
   </Layout>
 )
