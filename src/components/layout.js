@@ -9,11 +9,13 @@ import React from "react"
 import PropTypes from "prop-types"
 import logo from '../images/jadasMochiDonuts_V1.png'
 import ig from '../images/glyph-logo_May2016.png'
+import Header from './header'
 import "./styles/layout.scss"
 
 const Layout = ({ children }) => {
   return (
     <>
+    <Header/>
     <a href='https://www.instagram.com/jadasmochidonuts'><img style={{ width: `29px`, marginTop: `.5rem`, marginLeft: `.5rem` }} src={ig} alt='Instagram' /></a>
       <div
         style={{
