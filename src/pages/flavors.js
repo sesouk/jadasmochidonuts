@@ -32,10 +32,10 @@ const Flavors = () => {
     {flavor: 'Cinnamon Toast Crunch', img: cinna, extra: ''}
   ])
 const flavorsMap = flavors.map(e => {
-  return( <div key={e.flavor}>
-    <h4>{e.flavor}</h4>
-    <img style={{width: '500px' }} src={e.img} alt={`${e.name} close up`}/>
-    {e.extra != '' ? <small>{e.extra}</small> : null}
+  return( <div className='flavors' style={{width: '300px', textAlign: 'center'}} key={e.flavor}>
+    <p className='flavors__name'>{e.flavor}</p>
+    <img className='flavors__image' src={e.img} alt={`${e.name} close up`}/>
+    {e.extra != '' ? <div><small>{e.extra}</small></div> : null}
   </div>)
 })
   return (
