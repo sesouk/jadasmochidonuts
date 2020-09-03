@@ -10,18 +10,20 @@ import oreo from '../images/oreo.jpg'
 import reeses from '../images/reesesChoco.jpg'
 import thaiTea from '../images/thaiTea.jpg'
 import vietCoffee from '../images/vietCoffee.jpg'
+import pandanCoco from '../images/pandanCoco.jpg'
+import taro from '../images/taro.jpg'
 import ig from '../images/glyph-logo_May2016.png'
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 const Flavors = () => {
   const [ flavors ] = useState([
-    {flavor: 'Taro', img: ig, extra: ''},
+    {flavor: 'Taro', img: taro, extra: ''},
     {flavor: 'Green Tea', img: greenTea, extra: ''},
     {flavor: 'Brown Sugar Milk Tea', img: brownSugar, extra: ''},
     {flavor: 'Thai Tea', img: thaiTea, extra: ''},
     {flavor: 'Vietnamese Coffee', img: vietCoffee, extra: '(fan favorite)'},
-    {flavor: 'Pandan Coconut', img: ig, extra: ''},
+    {flavor: 'Pandan Coconut', img: pandanCoco, extra: ''},
     {flavor: 'Mango', img: mango, extra: ''},
     {flavor: "Reese's Chocolate", img: reeses, extra: '*contains nuts*'},
     {flavor: 'White Chocolate Almond', img: ig, extra: '*contains nuts*'},
