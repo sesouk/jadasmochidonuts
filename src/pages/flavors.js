@@ -25,8 +25,8 @@ const Flavors = () => {
     {flavor: 'Vietnamese Coffee', img: vietCoffee, extra: '(fan favorite)'},
     {flavor: 'Pandan Coconut', img: pandanCoco, extra: ''},
     {flavor: 'Mango', img: mango, extra: ''},
+    {flavor: 'White Chocolate Almond', img: oreo, extra: '*contains nuts*'},
     {flavor: "Reese's Chocolate", img: reeses, extra: '*contains nuts*'},
-    {flavor: 'White Chocolate Almond', img: ig, extra: '*contains nuts*'},
     {flavor: 'Oreo', img: oreo, extra: ''},
     {flavor: "Fruity Pebble's", img: fruity, extra: ''},
     {flavor: 'Cinnamon Toast Crunch', img: cinna, extra: ''}
