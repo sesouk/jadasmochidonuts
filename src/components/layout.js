@@ -16,7 +16,6 @@ const Layout = ({ children }) => {
   return (
     <>
     <Header/>
-    <a href='https://www.instagram.com/jadasmochidonuts'><img style={{ width: `29px`, marginTop: `.5rem`, marginLeft: `.5rem` }} src={ig} alt='Instagram' /></a>
       <div
         style={{
           margin: `2rem auto`,
