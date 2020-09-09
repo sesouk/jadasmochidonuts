@@ -1,24 +1,29 @@
-import React from "react"
+import React, { useState } from "react"
 import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-const Order = () => (
+const Order = () => {
+  const [drawer, setDrawer] = useState(true)
+
+  const toggle = () => setDrawer(!drawer)
+  return (
   <Layout>
     <SEO title="Page two" />
     <div className='body'>
       <div className='body__info'>
-        <div className='price'>
+        <div className='price' onClick={() => {toggle()}}>
           <h4 className='price__title'>Pricing</h4>
-          <p className='price__arrow'>▼</p>
+          {drawer ? <p className='price__arrow'>▼</p> :
+          <p className='price__arrow'>▲</p> }
         </div>
-        <ul className='body__info--list'>
+        {!drawer ? <ul className='body__info--list'>
           <li className='body__info--list--items'>$17 for 1 dozen</li>
           <li className='body__info--list--items'>$15 per dozen when ordering 2 or more</li>
           <li className='body__info--list--items'>Curbside pickup is free</li>
           <li className='body__info--list--items'>Delivery fee of $2 - $8 will apply depending on location</li>
-        </ul>
+        </ul> : null }
       </div>
       <h4 className='body__info--title'>Please use this form to place your order!</h4>
       <form className='order' name="order" method="post" action="/success" data-netlify="true" data-netlify-honeypot="bot-field">
@@ -73,6 +78,6 @@ const Order = () => (
       </form>
     </div>
   </Layout>
-)
+)}
 
 export default Order
