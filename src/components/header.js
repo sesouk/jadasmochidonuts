@@ -6,7 +6,7 @@ import logo from '../images/jadasMochiDonuts_V1.png'
 const Header = ({ siteTitle }) => (
   <header
     style={{
-      background: `rebeccapurple`,
+      background: `lightpink`,
       marginBottom: `1.45rem`,
     }}
   >
@@ -14,14 +14,21 @@ const Header = ({ siteTitle }) => (
       style={{
         margin: `0 auto`,
         padding: `1.45rem 1.0875rem`,
+        display: 'grid',
+        gridTemplateColumns: '1fr 1fr' 
       }}
     >
-      <ul>
-        <li><Link to='/'>Home</Link></li>
-        <li><Link to='/flavors'>Flavors</Link></li>
-        <li><Link to='/pricing'>Pricing</Link></li>
-        <li><Link to='/order'>Ordering</Link></li>
-        <li><Link to='/about'>About</Link></li>
+      <img src={logo} alt="Jada's Mochi Donuts" style={{
+        width: '65px'
+      }}/>
+      <ul style={{
+        display: 'grid',
+        gridTemplateColumns: '1fr 1fr 1fr 1fr'
+      }}>
+        <li style={{listStyleType: 'none'}}><Link style={{color: 'black', textDecoration: 'none'}} to='/'>Home</Link></li>
+        <li style={{listStyleType: 'none'}}><Link style={{color: 'black', textDecoration: 'none'}} to='/flavors'>Flavors</Link></li>
+        <li style={{listStyleType: 'none'}}><Link style={{color: 'black', textDecoration: 'none'}} to='/order'>Ordering and Pricing</Link></li>
+        <li style={{listStyleType: 'none'}}><Link style={{color: 'black', textDecoration: 'none'}} to='/about'>About</Link></li>
       </ul>
     </div>
   </header>
