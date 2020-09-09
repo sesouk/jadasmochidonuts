@@ -11,8 +11,8 @@ import reeses from '../images/reesesChoco.jpg'
 import thaiTea from '../images/thaiTea.jpg'
 import vietCoffee from '../images/vietCoffee.jpg'
 import pandanCoco from '../images/pandanCoco.jpg'
+import whiteChoc from '../images/whiteChoc.jpg'
 import taro from '../images/taro.jpg'
-import ig from '../images/glyph-logo_May2016.png'
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
@@ -25,7 +25,7 @@ const Flavors = () => {
     {flavor: 'Vietnamese Coffee', img: vietCoffee, extra: '(fan favorite)'},
     {flavor: 'Pandan Coconut', img: pandanCoco, extra: ''},
     {flavor: 'Mango', img: mango, extra: ''},
-    {flavor: 'White Chocolate Almond', img: oreo, extra: '*contains nuts*'},
+    {flavor: 'White Chocolate Almond', img: whiteChoc, extra: '*contains nuts*'},
     {flavor: "Reese's Chocolate", img: reeses, extra: '*contains nuts*'},
     {flavor: 'Oreo', img: oreo, extra: ''},
     {flavor: "Fruity Pebble's", img: fruity, extra: ''},
