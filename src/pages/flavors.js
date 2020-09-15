@@ -19,23 +19,23 @@ import SEO from "../components/seo"
 const Flavors = () => {
   const [ flavors ] = useState([
     {flavor: 'Taro', img: taro, extra: ''},
+    {flavor: 'Vietnamese Coffee', img: vietCoffee, extra: '(fan favorite)'},
     {flavor: 'Green Tea', img: greenTea, extra: ''},
     {flavor: 'Brown Sugar Milk Tea', img: brownSugar, extra: ''},
+    {flavor: 'Oreo', img: oreo, extra: '(fan favorite)'},
     {flavor: 'Thai Tea', img: thaiTea, extra: ''},
-    {flavor: 'Vietnamese Coffee', img: vietCoffee, extra: '(fan favorite)'},
     {flavor: 'Pandan Coconut', img: pandanCoco, extra: ''},
-    {flavor: 'Mango', img: mango, extra: ''},
     {flavor: 'White Chocolate Almond', img: whiteChoc, extra: '*contains nuts*'},
-    {flavor: "Reese's Chocolate", img: reeses, extra: '*contains nuts*'},
-    {flavor: 'Oreo', img: oreo, extra: ''},
+    {flavor: 'Mango', img: mango, extra: ''},
     {flavor: "Fruity Pebble's", img: fruity, extra: ''},
+    {flavor: "Reese's Chocolate", img: reeses, extra: '*contains nuts*'},
     {flavor: 'Cinnamon Toast Crunch', img: cinna, extra: ''}
   ])
 const flavorsMap = flavors.map(e => {
   return( <div className='flavors'key={e.flavor}>
     <p className='flavors__name'>{e.flavor}</p>
     <img className='flavors__image' src={e.img} alt={`${e.name} close up`}/>
-    {e.extra != '' ? <div><small>{e.extra}</small></div> : null}
+    {e.extra != '' ? <div className='flavors__name'><small>{e.extra}</small></div> : null}
   </div>)
 })
   return (

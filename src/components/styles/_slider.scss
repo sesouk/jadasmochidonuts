@@ -7,7 +7,7 @@
       border-radius: .5rem;
       border: 2px solid #9b79b6;
       @include md {
-        width: 100%
+        width: 75%
       }
     }
   }
@@ -32,8 +32,8 @@
     border-radius: .5rem;
     border: 2px solid #9b79b6;
     background-color: #f8b4c0;
-    -webkit-box-shadow: 9px 13px 16px 3px rgba(155,121,182,0.67); 
-    box-shadow: 9px 13px 16px 3px rgba(155,121,182,0.67);
+    -webkit-box-shadow: 0 7px 9px 0 rgba(155,121,182,0.67); 
+    box-shadow: 0 7px 9px 0 rgba(155,121,182,0.67);
   }
 
   &__prev:hover, &__next:hover {

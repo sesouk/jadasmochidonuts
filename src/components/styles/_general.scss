@@ -5,8 +5,7 @@ html {
 body {
   margin: 0 auto;
   font-size: 14pt;
-  background: rgb(182,144,184);
-  background: linear-gradient(55deg, rgba(182,144,184,1) 0%, rgba(248,180,192,1) 50%, rgba(199,173,201,1) 100%);
+  background: pink;
 }
 
 .logo {
@@ -25,6 +24,7 @@ body {
     margin-bottom: 1.45rem;
     text-rendering: optimizeLegibility;
     font-size: 20pt;
+    text-align: center;
    }
    &--list {
     margin-bottom: 1.45rem;

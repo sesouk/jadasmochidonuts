@@ -13,7 +13,7 @@ const [ slide, setSlide ] = useState(1)
 
 const prev = () => {
   if( slide === 1 ) {
-    setSlide( 5 )
+    setSlide( 4 )
   }
   else {
     setSlide( slide - 1 )
@@ -21,7 +21,7 @@ const prev = () => {
 }
 
 const next = () => {
-  if( slide === 5 ) {
+  if( slide === 4 ) {
     setSlide( 1 )
   }
   else{
@@ -32,7 +32,6 @@ return (
   <Layout>
     <SEO title="Home" />
     <div className='body'>
-    <div className='body__info'>
         {slide === 1
           ? <div className="slideshow">
             <div className="slideshow__slides slideshow__fade">
@@ -43,25 +42,18 @@ return (
         {slide === 2
           ? <div className="slideshow">
             <div className="slideshow__slides slideshow__fade">
-              <img src={donutsFancy} className='slideshow__slides--image' alt='Donuts on a plate' />
+              <img src={donutsToGo} className='slideshow__slides--image' alt='Lots of donuts to go' />
             </div>
           </div>
           : null}
         {slide === 3
           ? <div className="slideshow">
             <div className="slideshow__slides slideshow__fade">
-              <img src={donutsToGo} className='slideshow__slides--image' alt='Lots of donuts to go' />
-            </div>
-          </div>
-          : null}
-        {slide === 4
-          ? <div className="slideshow">
-            <div className="slideshow__slides slideshow__fade">
               <img src={donutsPacked} className='slideshow__slides--image' alt='Donuts to go' />
             </div>
           </div>
           : null}
-        {slide === 5
+        {slide === 4
           ? <div className="slideshow">
             <div className="slideshow__slides slideshow__fade">
               <img src={donutsClose} className='slideshow__slides--image' alt='Donuts to go' />
@@ -72,7 +64,6 @@ return (
       <button className="btn__prev" onClick={prev}>&#10094;</button>
       <button className="btn__next" onClick={next}>&#10095;</button>
       </div>
-    </div>
        </div> 
   </Layout>
   )
