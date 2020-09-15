@@ -25,8 +25,9 @@ const Order = () => {
           <li className='body__info--list--items'>Delivery fee of $2 - $8 will apply depending on location</li>
         </ul> : null }
       </div>
-      <h4 className='body__info--title'>Please use this form to place your order!</h4>
-      <form className='order' name="order" method="post" action="/success" data-netlify="true" data-netlify-honeypot="bot-field">
+      <div className="orderContainer">
+      <h4 className='body__info--title orderContainer__title'>Please use this form to place your order!</h4>
+      <form className='order orderContainer__form' name="order" method="post" action="/success" data-netlify="true" data-netlify-honeypot="bot-field">
         <input type="hidden" name="bot-field" />
         <input type="hidden" name="form-name" value="order" />
         <div className='order__holder'>
@@ -76,6 +77,7 @@ const Order = () => {
         </div>
         <small className='body__info--details'>*Note orders will be ready in 24-48 hours</small>
       </form>
+      </div>
     </div>
   </Layout>
 )}

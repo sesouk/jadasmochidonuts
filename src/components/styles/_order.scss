@@ -1,5 +1,4 @@
 .order {
-  text-align: center;
   margin-bottom: 1.45rem;
   font-size: 14pt;
   &__holder {
@@ -67,6 +66,18 @@
       -webkit-box-shadow: 0 7px 9px 0 rgba(155,121,182,0.67); 
       box-shadow: 0 7px 9px 0 rgba(155,121,182,0.67);
     }
+  }
+}
+
+.orderContainer {
+  display: grid;
+  grid-template-rows: .1fr 1fr;
+  &__title {
+    align-self: end;
+    justify-self: center;
+  }
+  &__form {
+    justify-self: center;
   }
 }
 
