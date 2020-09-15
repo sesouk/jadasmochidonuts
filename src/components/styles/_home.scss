@@ -1,0 +1,16 @@
+.landing {
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 2rem
+}
+.slide {
+  display: grid;
+  grid-template-rows: 1fr .1fr;
+  align-self: center;
+}
+.welcome {
+  &__img {
+    height: 50vh;
+  }
+}

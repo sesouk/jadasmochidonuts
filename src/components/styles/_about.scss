@@ -2,11 +2,13 @@
   text-align: center;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  margin-top: 3rem;
+  margin-top: 2rem;
   &__img {
-    height: 70vh
+    height: 70vh;
+    border-radius: 5px;
   }
   &__text {
     align-self: center;
+    padding: 2rem
   }
 }
