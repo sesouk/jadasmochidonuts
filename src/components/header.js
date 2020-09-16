@@ -7,7 +7,8 @@ import ig from '../images/glyph-logo_May2016.png'
 const Header = ({ siteTitle }) => (
   <header
     style={{
-      background: `lightpink`,
+      background: `#f8b4c0`,
+      borderBottom: `solid #9b79b6 2px`
     }}
   >
     <div

@@ -22,6 +22,7 @@ const Layout = ({ children }) => {
           marginTop: `0`,
           maxWidth: 960,
           padding: `0 1.0875rem 1.45rem`,
+          backgroundColor: `#F3F5F2`
         }}
       >
         {/* <div style={{textAlign: 'center', paddingBottom: '2rem', color: 'red'}}>Hi! We will not be taking orders from July 9th-12th. Please get your orders in before, and thank you for your continued support :)</div> */}
