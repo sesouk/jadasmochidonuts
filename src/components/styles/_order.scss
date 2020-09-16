@@ -12,7 +12,7 @@
       width: 200px;
       font-size: inherit;
       background-color: #f8b4c0;
-      border: 2px solid #9b79b6;
+      border: 2px solid #b1a6c8;
       -webkit-box-shadow: 0 2px 6px 0 rgba(155,121,182,0.67); 
       box-shadow: 0 2px 6px 0 rgba(155,121,182,0.67); 
     }
@@ -38,7 +38,7 @@
       background-repeat: no-repeat, repeat;
       background-position: right .7rem top 50%, 0 0;
       background-size: .65rem auto, 100%;
-      border: 2px solid #9b79b6;
+      border: 2px solid #b1a6c8;
       -webkit-box-shadow: 0 2px 6px 0 rgba(155,121,182,0.67); 
       box-shadow: 0 2px 6px 0 rgba(155,121,182,0.67);
     }
@@ -49,7 +49,7 @@
       border-radius: .5rem;
       font-size: inherit;
       background-color: #f8b4c0;
-      border: 2px solid #9b79b6;
+      border: 2px solid #b1a6c8;
       -webkit-box-shadow: 0 2px 6px 0 rgba(155,121,182,0.67); 
       box-shadow: 0 2px 6px 0 rgba(155,121,182,0.67);
     }
@@ -60,7 +60,7 @@
       border-radius: .5rem;
       width: 240px;
       background-color: #f8b4c0;
-      border: 2px solid #9b79b6;
+      border: 2px solid #b1a6c8;
       font-size: inherit;
       -webkit-box-shadow: 0 2px 6px 0 rgba(155,121,182,0.67); 
       box-shadow: 0 2px 6px 0 rgba(155,121,182,0.67);
@@ -87,7 +87,7 @@
 .price {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  border-bottom: solid #9b79b6 2px;
+  border-bottom: solid #f8b4c0 2px;
   &__title {
     text-rendering: optimizeLegibility;
     font-size: 20pt;

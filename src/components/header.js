@@ -1,14 +1,14 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
-import logo from '../images/jadasMochiDonuts_V1.png'
+import jmd from '../images/jmd.png'
 import ig from '../images/glyph-logo_May2016.png'
 
 const Header = ({ siteTitle }) => (
   <header
     style={{
-      background: `#f8b4c0`,
-      borderBottom: `solid #9b79b6 2px`
+      background: ` #b1a6c8`,
+      borderBottom: `solid #f8b4c0 2px`
     }}
   >
     <div
@@ -19,8 +19,9 @@ const Header = ({ siteTitle }) => (
         gridTemplateColumns: '.35fr 1fr' 
       }}
     >
-      {/* <img src={logo} alt="Jada's Mochi Donuts" style={{
-        width: '65px'
+      {/* <img src={jmd} alt="Jada's Mochi Donuts" style={{
+        width: '300px',
+        alignSelf: 'center'
       }}/> */}
       <p>Jada's Mochi Donuts</p>
       <ul style={{
