@@ -1,8 +1,9 @@
 import React, { useState } from "react"
-import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import upArrow from '../images/upArrow.svg'
+import downArrow from '../images/downArrow.svg'
 
 const Order = () => {
   const [drawer, setDrawer] = useState(true)
@@ -15,8 +16,8 @@ const Order = () => {
       <div className='body__info'>
         <div className='price' onClick={() => {toggle()}}>
           <h4 className='price__title'>Pricing</h4>
-          {drawer ? <p className='price__arrow'>▼</p> :
-          <p className='price__arrow'>▲</p> }
+          {drawer ? <p className='price__arrow'><img src={downArrow} alt='down arrow'/></p> :
+          <p className='price__arrow'><img src={upArrow} alt='up arrow'/></p> }
         </div>
         {!drawer ? <ul className='body__info--list'>
           <li className='body__info--list--items'>$17 for 1 dozen</li>

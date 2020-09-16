@@ -1,16 +1,63 @@
 .landing {
   text-align: center;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  margin-top: 3rem
+  margin-top: 3rem;
+  @include xs {
+    grid-template-rows: 1fr 1fr;
+  }
+  @include sm {
+    grid-template-rows: 1fr 1fr;
+  }
+  @include md {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: none;
+  }
+  @include lg {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: none;
+  }
+  @include xl {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: none;
+  }
 }
 .slide {
   display: grid;
   grid-template-rows: 1fr .1fr;
   align-self: center;
+  @include xs {
+    align-self: start;
+  }
+  @include sm {
+    align-self: start;
+  }
+  @include md {
+    align-self: center;
+  }
+  @include lg {
+    align-self: center;
+  }
+  @include xl {
+    align-self: center;
+  }
 }
 .welcome {
   &__img {
     height: 50vh;
+    @include xs {
+      height: 30vh;
+    }
+    @include sm {
+      height: 30vh;
+    }
+    @include md {
+      height: 40vh;
+    }
+    @include lg {
+      height: 50vh;
+    }
+    @include xl {
+      height: 50vh;
+    }
   }
 }

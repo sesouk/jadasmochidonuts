@@ -32,6 +32,10 @@ const IndexPage = () => {
     <Layout>
       <SEO title="Home" />
       <div className='landing'>
+        <div className="welcome">
+          <img className="welcome__img" src={logo} alt="Jada's Mochi Donuts Logo"/>
+          <p className="welcome__text">Welcome to Jada’s Mochi Donuts! Our donuts are homemade and freshly made for every order. Treat yourself and your loved ones to a deliciously chewy treat 💜</p>
+        </div>
       <div className='slide'>
         {slide === 1
           ? <div className="slideshow">
@@ -66,10 +70,6 @@ const IndexPage = () => {
           <button className="btn__next" onClick={next}>&#10095;</button>
         </div>
       </div>
-        <div className="welcome">
-          <img className="welcome__img" src={logo} alt="Jada's Mochi Donuts Logo"/>
-          <p className="welcome__text">Welcome to Jada’s Mochi Donuts! Our donuts are homemade and freshly made for every order. Treat yourself and your loved ones to a deliciously chewy treat 💜</p>
-        </div>
         </div>
     </Layout>
   )

@@ -13,6 +13,21 @@
   overflow: scroll;
   max-height: 75vh;
   margin-top: 2rem;
+  @include xs {
+    grid-template-columns: 1fr;
+  }
+  @include sm {
+    grid-template-columns: 1fr;
+  }
+  @include md {
+    grid-template-columns: 1fr 1fr;
+  }
+  @include lg {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  @include xl {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 
 .flavors {

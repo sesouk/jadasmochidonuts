@@ -3,11 +3,23 @@
 
   &__slides {
     &--image {
-      height: 75vh;
+      height: 45vh;
       border-radius: .5rem;
       border: 2px solid #9b79b6;
+      @include xs {
+        height: 25vh;
+      }
+      @include sm {
+        height: 25vh;
+      }
       @include md {
-        height: 45vh
+        height: 35vh;
+      }
+      @include lg {
+        height: 45vh;
+      }
+      @include xl {
+        height: 45vh;
       }
     }
   }
