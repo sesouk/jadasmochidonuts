@@ -1,0 +1,69 @@
+.about {
+  text-align: center;
+  display: grid;
+  padding-top: 2rem;
+  @include xs {
+    grid-template-rows: .5fr .5fr;
+  }
+  @include sm {
+    grid-template-rows: .5fr .5fr;
+  }
+  @include md {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: none;
+  }
+  @include lg {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: none;
+  }
+  @include xl {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: none;
+  }
+  &__img {
+    height: 70vh;
+    border-radius: 5px;
+    @include xs {
+      height: 30vh;
+      align-self: center;
+      justify-self: center;
+    }
+    @include sm {
+      height: 30vh;
+      justify-self: center;
+      align-self: center;
+    }
+    @include md {
+      height: 50vh;
+    }
+    @include lg {
+      height: 70vh;
+    }
+    @include xl {
+      height: 70vh;
+    }
+  }
+  &__text {
+    align-self: center;
+    @include xs {
+      align-self: start;
+      padding: .5rem
+    }
+    @include sm {
+      align-self: start;
+      padding: .5rem
+    }
+    @include md {
+      align-self: center;
+      padding: 2rem;
+    }
+    @include lg {
+      align-self: center;
+      padding: 2rem;
+    }
+    @include xl {
+      align-self: center;
+      padding: 2rem;
+    }
+  }
+}
