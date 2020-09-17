@@ -30,6 +30,7 @@
   &__img {
     width: 200px;
     align-self: center;
+    justify-self: center;
     &--holder {
       align-self: center;
       padding-top: 6px;
@@ -52,7 +53,7 @@
   } 
   &__linkHolder {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     @include xs {
       display: none
     }
@@ -71,7 +72,7 @@
   }
   &__mobileHolder {
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
     gap: 1rem;
     @include xs {
       display: none;
@@ -91,7 +92,9 @@
   }
   &__links {
     list-style-type: none;
-    justify-self: center
+    justify-self: center;
+    font-size: 16pt;
+    font-weight: bold;
   }
   &__more {
     display: inline-block;

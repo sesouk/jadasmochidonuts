@@ -19,15 +19,15 @@ const Flavors = () => {
   const [ flavors ] = useState([
     {flavor: 'Taro', img: taro, extra: ''},
     {flavor: 'Vietnamese Coffee', img: vietCoffee, extra: '(fan favorite)'},
-    {flavor: 'Green Tea', img: greenTea, extra: ''},
-    {flavor: 'Brown Sugar Milk Tea', img: brownSugar, extra: ''},
-    {flavor: 'Oreo', img: oreo, extra: '(fan favorite)'},
     {flavor: 'Thai Tea', img: thaiTea, extra: ''},
     {flavor: 'Pandan Coconut', img: pandanCoco, extra: ''},
-    {flavor: 'White Chocolate Almond', img: whiteChoc, extra: '*contains nuts*'},
+    {flavor: 'Brown Sugar Milk Tea', img: brownSugar, extra: ''},
+    {flavor: 'Green Tea', img: greenTea, extra: ''},
     {flavor: 'Mango', img: mango, extra: ''},
-    {flavor: "Fruity Pebble's", img: fruity, extra: ''},
+    {flavor: 'White Chocolate Almond', img: whiteChoc, extra: '*contains nuts*'},
     {flavor: "Reese's Chocolate", img: reeses, extra: '*contains nuts*'},
+    {flavor: "Fruity Pebble's", img: fruity, extra: ''},
+    {flavor: 'Oreo', img: oreo, extra: '(fan favorite)'},
     {flavor: 'Cinnamon Toast Crunch', img: cinna, extra: ''}
   ])
 const flavorsMap = flavors.map(e => {

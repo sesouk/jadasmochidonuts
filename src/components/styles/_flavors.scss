@@ -1,4 +1,17 @@
 .flavors {
+  justify-self: center;
+  align-self: center;
+  border: 0;
+  box-shadow: 0 2px 6px 0 rgba(155,121,182,0.67);
+  border-radius: 5px;
+  min-height: 400px;
+  margin-top: .5rem;
+  margin-bottom: .5rem;
+  text-align: center;
+  background-color: #f8b4c0;
+  &__image {
+    border-radius: 5px;
+  }
   &__name {
     font-size: 20px;
   }
@@ -19,6 +32,21 @@
     @include xl {
       width: 300px;
     }
+  }
+  @include xs {
+    min-height: 335px;
+  }
+  @include sm {
+    min-height: 335px;
+  }
+  @include md {
+    min-height: 400px;
+  }
+  @include lg {
+    min-height: 400px;
+  }
+  @include xl {
+    min-height: 400px;
   }
 }
 
@@ -42,21 +70,5 @@
   }
   @include xl {
     grid-template-columns: 1fr 1fr 1fr;
-  }
-}
-
-.flavors {
-  justify-self: center;
-  align-self: center;
-  border: 0;
-  box-shadow: 0 2px 6px 0 rgba(155,121,182,0.67);
-  border-radius: 5px;
-  min-height: 400px;
-  margin-top: .5rem;
-  margin-bottom: .5rem;
-  text-align: center;
-  background-color: #f8b4c0;
-  &__image {
-    border-radius: 5px;
   }
 }
