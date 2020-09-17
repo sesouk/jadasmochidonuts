@@ -34,7 +34,7 @@ const IndexPage = () => {
       <div className='landing'>
         <div className="welcome">
           <img className="welcome__img" src={logo} alt="Jada's Mochi Donuts Logo"/>
-          <p className="welcome__text">Welcome to Jada’s Mochi Donuts! Our donuts are homemade and freshly made for every order. Treat yourself and your loved ones to a deliciously chewy treat 💜</p>
+          <p className="welcome__text">Welcome to Jada’s Mochi Donuts! Our donuts are homemade and freshly made for every order. Treat yourself and your loved ones to a deliciously chewy treat <span role='img' aria-label='purple heart emoji'>💜</span></p>
         </div>
       <div className='slide'>
         {slide === 1

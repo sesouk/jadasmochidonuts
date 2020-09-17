@@ -9,12 +9,18 @@ const Order = () => {
   const [drawer, setDrawer] = useState(true)
 
   const toggle = () => setDrawer(!drawer)
+
+  const handleKeyDown = (e) => {
+    if (e.keyCode === 220) {
+      toggle()
+    }
+  }
   return (
   <Layout>
     <SEO title="Page two" />
     <div className='body'>
       <div className='body__info'>
-        <div className='price' onClick={() => {toggle()}}>
+        <div className='price' role='button' tabIndex={0} onClick={() => {toggle()}} onKeyDown={(e) => handleKeyDown(e)}>
           <h4 className='price__title'>Pricing</h4>
           {drawer ? <p className='price__arrow'><img src={downArrow} alt='down arrow'/></p> :
           <p className='price__arrow'><img src={upArrow} alt='up arrow'/></p> }

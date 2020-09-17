@@ -8,10 +8,12 @@
   padding: 1.45rem;
   display: grid;
   @include xs {
-    grid-template-rows: .30fr .30fr 1fr
+    grid-template-rows: 1fr 1fr;
+    gap: 1rem;
   }
   @include sm {
-    grid-template-rows: .30fr .30fr 1fr
+    grid-template-rows: 1fr 1fr;
+    gap: 1rem;
   }
   @include md {
     grid-template-columns: .35fr 1fr;
@@ -28,20 +30,24 @@
   &__img {
     width: 200px;
     align-self: center;
-    @include xs {
-      justify-self: center;
-    }
-    @include sm {
-      justify-self: center;
-    }
-    @include md {
-      justify-self: start;
-    }
-    @include lg {
-      justify-self: start;
-    }
-    @include xl {
-      justify-self: start;
+    &--holder {
+      align-self: center;
+      padding-top: 6px;
+      @include xs {
+        justify-self: center;
+      }
+      @include sm {
+        justify-self: center;
+      }
+      @include md {
+        justify-self: start;
+      }
+      @include lg {
+        justify-self: start;
+      }
+      @include xl {
+        justify-self: start;
+      }
     }
   } 
   &__linkHolder {
@@ -65,12 +71,13 @@
   }
   &__mobileHolder {
     display: grid;
-    // grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    gap: 1rem;
     @include xs {
-      display: grid;
+      display: none;
     }
     @include sm {
-      display: grid;
+      display: none;
     }
     @include md {
       display: none
@@ -87,6 +94,9 @@
     justify-self: center
   }
   &__more {
+    display: inline-block;
+    background: transparent;
+    border: none;
     @include xs {
       display: grid;
       align-self: center;
@@ -107,4 +117,23 @@
       display: none
     }
   }
+}
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 4px;
+  border-radius: 32%;
+  background-color: #333;
+  margin: 3px 0;
+  transition: 0.4s;
+}
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-5px, 6px) ;
+  transform: rotate(-45deg) translate(-5px, 6px) ;
+}
+.change .bar2 {
+  opacity: 0;
+}
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -9px) ;
+  transform: rotate(45deg) translate(-8px, -9px) ;
 }

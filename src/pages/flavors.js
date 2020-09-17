@@ -1,5 +1,4 @@
 import React, { useState } from "react"
-import { Link } from "gatsby"
 
 import brownSugar from '../images/brownSugarMilkTea.jpg'
 import cinna from '../images/cinnaToastCrunch.jpg'
@@ -35,7 +34,7 @@ const flavorsMap = flavors.map(e => {
   return( <div className='flavors'key={e.flavor}>
     <p className='flavors__name'>{e.flavor}</p>
     <img className='flavors__image' src={e.img} alt={`${e.name} close up`}/>
-    {e.extra != '' ? <div className='flavors__name'><small>{e.extra}</small></div> : null}
+    {e.extra !== '' ? <div className='flavors__name'><small>{e.extra}</small></div> : null}
   </div>)
 })
   return (

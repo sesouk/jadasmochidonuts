@@ -88,6 +88,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   border-bottom: solid #f8b4c0 2px;
+  cursor: pointer;
   &__title {
     text-rendering: optimizeLegibility;
     font-size: 20pt;

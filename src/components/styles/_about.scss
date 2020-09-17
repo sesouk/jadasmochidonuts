@@ -3,10 +3,10 @@
   display: grid;
   padding-top: 2rem;
   @include xs {
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: .5fr .5fr;
   }
   @include sm {
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: .5fr .5fr;
   }
   @include md {
     grid-template-columns: 1fr 1fr;
@@ -24,12 +24,12 @@
     height: 70vh;
     border-radius: 5px;
     @include xs {
-      height: 50vh;
+      height: 30vh;
       align-self: center;
       justify-self: center;
     }
     @include sm {
-      height: 50vh;
+      height: 30vh;
       justify-self: center;
       align-self: center;
     }
@@ -45,21 +45,25 @@
   }
   &__text {
     align-self: center;
-    padding: 2rem;
     @include xs {
       align-self: start;
+      padding: .5rem
     }
     @include sm {
       align-self: start;
+      padding: .5rem
     }
     @include md {
       align-self: center;
+      padding: 2rem;
     }
     @include lg {
       align-self: center;
+      padding: 2rem;
     }
     @include xl {
       align-self: center;
+      padding: 2rem;
     }
   }
 }
