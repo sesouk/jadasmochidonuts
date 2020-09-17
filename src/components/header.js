@@ -1,35 +1,49 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
-import React from "react"
+import React, { useState, useEffect } from "react"
+import jmd from '../images/jmd.png'
+import ig from '../images/glyph-logo_May2016.png'
 
-const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
-    </div>
-  </header>
-)
+const Header = ({ siteTitle }) => {
+  const [dropdown, setDropdown] = useState(false)
+
+  const toggle = () => setDropdown(!dropdown)
+
+  useEffect(() => {
+    if (dropdown) {
+      document.getElementById('dropdown').style.display = 'grid'
+    } else {
+      document.getElementById('dropdown').style.display = 'none'
+    }
+  })
+
+  return (
+    <header className='header'>
+      <div className='navbar'>
+        <Link className='navbar__img--holder' to='/'><img className='navbar__img' src={jmd} alt="Jada's Mochi Donuts" /></Link>
+        <ul className='navbar__linkHolder'>
+          <li className='navbar__links'><Link style={{ color: 'black', textDecoration: 'none' }} to='/'>Home</Link></li>
+          <li className='navbar__links'><Link style={{ color: 'black', textDecoration: 'none' }} to='/about'>About</Link></li>
+          <li className='navbar__links'><Link style={{ color: 'black', textDecoration: 'none' }} to='/flavors'>Flavors</Link></li>
+          <li className='navbar__links'><Link style={{ color: 'black', textDecoration: 'none' }} to='/order'>Ordering</Link></li>
+          <li className='navbar__links'><a href='https://www.instagram.com/jadasmochidonuts'><img style={{ width: `18.67px` }} src={ig} alt="Click for Jada's Mochi Donuts' Instagram Account" /></a></li>
+        </ul>
+        <button className={'navbar__more' + (dropdown ? ' change' : '')} onClick={() => { toggle() }}>
+          <div className="bar1"></div>
+          <div className="bar2"></div>
+          <div className="bar3"></div>
+        </button>
+        <div className='navbar__mobileHolder' id='dropdown'>
+          <div className='navbar__links'><Link style={{ color: 'black', textDecoration: 'none' }} to='/'>Home</Link></div>
+          <div className='navbar__links'><Link style={{ color: 'black', textDecoration: 'none' }} to='/about'>About</Link></div>
+          <div className='navbar__links'><Link style={{ color: 'black', textDecoration: 'none' }} to='/flavors'>Flavors</Link></div>
+          <div className='navbar__links'><Link style={{ color: 'black', textDecoration: 'none' }} to='/order'>Ordering</Link></div>
+          <div className='navbar__links'><a href='https://www.instagram.com/jadasmochidonuts'><img style={{ width: `18.67px` }} src={ig} alt="Click for Jada's Mochi Donuts' Instagram Account" /></a></div>
+        </div>
+      </div>
+    </header>
+  )
+}
 
 Header.propTypes = {
   siteTitle: PropTypes.string,
