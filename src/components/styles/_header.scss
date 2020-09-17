@@ -1,0 +1,139 @@
+.header {
+  background: #b1a6c8;
+  border-bottom: solid #f8b4c0 2px
+}
+
+.navbar {
+  margin: 0 auto;
+  padding: 1.45rem;
+  display: grid;
+  @include xs {
+    grid-template-rows: 1fr 1fr;
+    gap: 1rem;
+  }
+  @include sm {
+    grid-template-rows: 1fr 1fr;
+    gap: 1rem;
+  }
+  @include md {
+    grid-template-columns: .35fr 1fr;
+    grid-template-rows: none
+  }
+  @include lg {
+    grid-template-columns: .35fr 1fr;
+    grid-template-rows: none
+  }
+  @include xl {
+    grid-template-columns: .35fr 1fr;
+    grid-template-rows: none
+  }
+  &__img {
+    width: 200px;
+    align-self: center;
+    &--holder {
+      align-self: center;
+      padding-top: 6px;
+      @include xs {
+        justify-self: center;
+      }
+      @include sm {
+        justify-self: center;
+      }
+      @include md {
+        justify-self: start;
+      }
+      @include lg {
+        justify-self: start;
+      }
+      @include xl {
+        justify-self: start;
+      }
+    }
+  } 
+  &__linkHolder {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    @include xs {
+      display: none
+    }
+    @include sm {
+      display: none
+    }
+    @include md {
+      display: grid
+    }
+    @include lg {
+      display: grid
+    }
+    @include xl {
+      display: grid
+    }
+  }
+  &__mobileHolder {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    gap: 1rem;
+    @include xs {
+      display: none;
+    }
+    @include sm {
+      display: none;
+    }
+    @include md {
+      display: none
+    }
+    @include lg {
+      display: none
+    }
+    @include xl {
+      display: none
+    }
+  }
+  &__links {
+    list-style-type: none;
+    justify-self: center
+  }
+  &__more {
+    display: inline-block;
+    background: transparent;
+    border: none;
+    @include xs {
+      display: grid;
+      align-self: center;
+      justify-self: center
+    }
+    @include sm {
+      display: grid;
+      align-self: center;
+      justify-self: center
+    }
+    @include md {
+      display: none
+    }
+    @include lg {
+      display: none
+    }
+    @include xl {
+      display: none
+    }
+  }
+}
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 4px;
+  border-radius: 32%;
+  background-color: #333;
+  margin: 3px 0;
+  transition: 0.4s;
+}
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+  transform: rotate(-45deg) translate(-9px, 6px) ;
+}
+.change .bar2 {
+  opacity: 0;
+}
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+  transform: rotate(45deg) translate(-8px, -8px) ;
+}
