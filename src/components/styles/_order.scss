@@ -75,8 +75,6 @@
 .orderContainer {
   display: grid;
   grid-template-rows: .1fr 1fr;
-  overflow: scroll;
-  max-height: 75vh;
   &__title {
     align-self: end;
     justify-self: center;

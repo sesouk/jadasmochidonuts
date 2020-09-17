@@ -2,8 +2,6 @@
   text-align: center;
   display: grid;
   overflow: scroll;
-  max-height: 75vh;
-  padding-top: 2rem;
   @include xs {
     grid-template-rows: .5fr .5fr;
   }
