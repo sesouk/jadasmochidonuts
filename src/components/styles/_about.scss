@@ -1,7 +1,7 @@
 .about {
   text-align: center;
   display: grid;
-  overflow: scroll;
+  padding-top: 2rem;
   @include xs {
     grid-template-rows: .5fr .5fr;
   }
