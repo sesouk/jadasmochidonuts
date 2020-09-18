@@ -5,7 +5,7 @@ import SEO from "../components/seo"
 import donuts from '../images/donuts.jpg'
 import donutsToGo from '../images/donutsToGo.jpg'
 import donutsClose from '../images/donutsClose.jpg'
-import donutsPacked from '../images/donutsPacked.jpg'
+import assortedDonuts from '../images/assortedDonuts.jpg'
 import logo from '../images/jadasMochiDonuts_V1.png'
 
 const IndexPage = () => {
@@ -54,7 +54,7 @@ const IndexPage = () => {
         {slide === 3
           ? <div className="slideshow">
             <div className="slideshow__slides slideshow__fade">
-              <img src={donutsPacked} className='slideshow__slides--image' alt='Donuts to go' />
+              <img src={assortedDonuts} className='slideshow__slides--image' alt='Assorted donuts' />
             </div>
           </div>
           : null}
