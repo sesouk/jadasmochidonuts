@@ -5,7 +5,7 @@
     &--image {
       height: 45vh;
       border-radius: .5rem;
-      border: 2px solid #f8b4c0;
+      border: 2px solid #f8b4c1;
       @include xs {
         height: 25vh;
       }
@@ -42,7 +42,7 @@
     font-size: inherit;
     transition: 0.6s ease;
     border-radius: .5rem;
-    border: 1px solid #f8b4c0;
+    border: 1px solid #f8b4c1;
     background-color: #b1a6c8;
     -webkit-box-shadow: 0 2px 6px 0 rgba(155,121,182,0.67); 
     box-shadow: 0 2px 6px 0 rgba(155,121,182,0.67);
