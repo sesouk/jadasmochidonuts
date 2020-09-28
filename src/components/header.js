@@ -28,7 +28,7 @@ const Header = ({ siteTitle }) => {
           <li className='navbar__links'><Link style={{ color: 'black', textDecoration: 'none' }} to='/flavors'>Flavors</Link></li>
           <li className='navbar__links'><Link style={{ color: 'black', textDecoration: 'none' }} to='/order'>Ordering</Link></li>
           <li className='navbar__links'><a href='https://www.instagram.com/jadasmochidonuts'><img style={{ width: `22.67px` }} src={ig} alt="Click for Jada's Mochi Donuts' Instagram Page" /></a></li>
-          <li className='navbar__links'><a href='https://www.facebook.com/Jadas-Mochi-Donuts-106867087730770/'><img style={{ width: `22.67px` }} src={fb} alt="Click for Jada's Mochi Donuts' Facebook Page" /></a></li>
+          <li className='navbar__links'><a href='https://www.facebook.com/jadasmochidonuts/'><img style={{ width: `22.67px` }} src={fb} alt="Click for Jada's Mochi Donuts' Facebook Page" /></a></li>
         </ul>
         <button className={'navbar__more' + (dropdown ? ' change' : '')} onClick={() => { toggle() }}>
           <div className="bar1"></div>
@@ -41,7 +41,7 @@ const Header = ({ siteTitle }) => {
           <div className='navbar__links'><Link style={{ color: 'black', textDecoration: 'none' }} to='/flavors'>Flavors</Link></div>
           <div className='navbar__links'><Link style={{ color: 'black', textDecoration: 'none' }} to='/order'>Ordering</Link></div>
           <div className='navbar__links'><a href='https://www.instagram.com/jadasmochidonuts'><img style={{ width: `22.67px` }} src={ig} alt="Click for Jada's Mochi Donuts' Instagram Account" /></a></div>
-          <div className='navbar__links'><a href='https://www.facebook.com/Jadas-Mochi-Donuts-106867087730770/'><img style={{ width: `22.67px` }} src={fb} alt="Click for Jada's Mochi Donuts' Instagram Account" /></a></div>
+          <div className='navbar__links'><a href='https://www.facebook.com/jadasmochidonuts/'><img style={{ width: `22.67px` }} src={fb} alt="Click for Jada's Mochi Donuts' Instagram Account" /></a></div>
         </div>
       </div>
     </header>
