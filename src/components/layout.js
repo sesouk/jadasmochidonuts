@@ -23,7 +23,7 @@ const Layout = ({ children }) => {
           backgroundColor: `#F3F5F2`
         }}
       >
-        <div style={{textAlign: 'center', paddingBottom: '2rem', paddingTop: '1rem'}}>Try our new Salted Caramel flavor and checkout our updated ordering guidlines before you order! :)</div>
+        <div style={{textAlign: 'center', paddingBottom: '2rem', paddingTop: '1rem'}}>Try our new Salted Caramel flavor, and checkout our updated ordering guidlines before you order! :)</div>
         {/* <img className='logo' src={logo} alt="Jada's Mochi Donuts Logo"/> */}
         <main>{children}</main>
         <footer style={{ fontSize: '8pt', marginTop: `1.5rem`,  position: `relative`, opacity: '0.5' }}>
