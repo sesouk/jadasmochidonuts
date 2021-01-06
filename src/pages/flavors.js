@@ -12,11 +12,13 @@ import vietCoffee from '../images/vietCoffee.jpg'
 import pandanCoco from '../images/pandanCoco.jpg'
 import whiteChoc from '../images/whiteChoc.jpg'
 import taro from '../images/taro.jpg'
+import salty from '../images/saltedCaramel.jpg'
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 const Flavors = () => {
   const [ flavors ] = useState([
+    {flavor: 'Salted Caramel', img: salty, extra: '*new flavor*'},
     {flavor: 'Taro', img: taro, extra: ''},
     {flavor: 'Vietnamese Coffee', img: vietCoffee, extra: '(fan favorite)'},
     {flavor: 'Thai Tea', img: thaiTea, extra: ''},

@@ -6,7 +6,7 @@ import upArrow from '../images/upArrow.svg'
 import downArrow from '../images/downArrow.svg'
 
 const Order = () => {
-  const [drawer, setDrawer] = useState(true)
+  const [drawer, setDrawer] = useState(false)
 
   const toggle = () => setDrawer(!drawer)
 
@@ -21,15 +21,15 @@ const Order = () => {
     <div className='body'>
       <div className='body__info'>
         <div className='price' role='button' tabIndex={0} onClick={() => {toggle()}} onKeyDown={(e) => handleKeyDown(e)}>
-          <h4 className='price__title'>Pricing</h4>
+          <h4 className='price__title'>Pricing & Ordering</h4>
           {drawer ? <p className='price__arrow'><img src={downArrow} alt='down arrow'/></p> :
           <p className='price__arrow'><img src={upArrow} alt='up arrow'/></p> }
         </div>
         {!drawer ? <ul className='body__info--list'>
-          <li className='body__info--list--items'>$17 for 1 dozen</li>
+          <li className='body__info--list--items'>$17 for 1 dozen <strong>(6 flavors max per dozen)</strong></li>
           <li className='body__info--list--items'>$15 per dozen when ordering 2 or more</li>
           <li className='body__info--list--items'>Curbside pickup is free (Southeast Aurora)</li>
-          <li className='body__info--list--items'>Delivery fee of $4 - $10 will apply depending on location</li>
+          <li className='body__info--list--items'>Delivery fee of $4 - $10 will apply depending on location <strong>with a max delivery distance of 30 miles</strong></li>
         </ul> : null }
       </div>
       <div className="orderContainer">
@@ -75,7 +75,8 @@ const Order = () => {
           </select>
         </div>
         <div>
-          <div className='order__holder--label'>Address for delivery, flavor choices,</div>
+          <div className='order__holder--label'>Address for delivery,</div>
+          <div className='order__holder--label'>flavor choices (6 max per dozen),</div>
           <div className='order__holder--label'>any other additional info:</div>
           <textarea className="order__holder--addInfo" type="text" name="details" />
         </div>
