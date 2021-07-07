@@ -26,10 +26,10 @@ const Order = () => {
           <p className='price__arrow'><img src={upArrow} alt='up arrow'/></p> }
         </div>
         {!drawer ? <ul className='body__info--list'>
-          <li className='body__info--list--items'>$17 for 1 dozen <strong>(6 flavors max per dozen)</strong></li>
-          <li className='body__info--list--items'>$15 per dozen when ordering 2 or more</li>
+          <li className='body__info--list--items'>$20 for 1 dozen <strong>(6 flavors max per dozen)</strong></li>
+          <li className='body__info--list--items'>$18 per dozen when ordering 2 or more</li>
           <li className='body__info--list--items'>Curbside pickup is free (Southeast Aurora)</li>
-          <li className='body__info--list--items'>Delivery fee of $4 - $10 will apply depending on location <strong>with a max delivery distance of 30 miles</strong></li>
+          <li className='body__info--list--items'>Delivery fee of $4 - $8 will apply depending on location <strong>with a max delivery distance of 10 mile radius of SE Aurora</strong></li>
         </ul> : null }
       </div>
       <div className="orderContainer">
