@@ -23,7 +23,7 @@ const Layout = ({ children }) => {
           backgroundColor: `#F3F5F2`
         }}
       >
-        <div style={{textAlign: 'center', paddingBottom: '2rem', paddingTop: '1rem'}}>We will not be taking any orders until Sunday 12/19. Sorry for any inconvenience, and thank you for your continued support! 💜</div>
+        <div style={{textAlign: 'center', paddingBottom: '2rem', paddingTop: '1rem'}}>We will not be taking any orders until Sunday 3/1. Sorry for any inconvenience, and thank you for your continued support! 💜</div>
         {/* <img className='logo' src={logo} alt="Jada's Mochi Donuts Logo"/> */}
         <main>{children}</main>
         <footer style={{ fontSize: '8pt', marginTop: `1.5rem`,  position: `relative`, opacity: '0.5' }}>
