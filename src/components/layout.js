@@ -23,7 +23,7 @@ const Layout = ({ children }) => {
           backgroundColor: `#F3F5F2`
         }}
       >
-        <div style={{textAlign: 'center', paddingBottom: '2rem', paddingTop: '1rem'}}>We will not be taking any orders until Sunday 3/1. Sorry for any inconvenience, and thank you for your continued support! 💜</div>
+        <div style={{textAlign: 'center', paddingBottom: '2rem', paddingTop: '1rem'}}>We will not be taking any online orders until further notice. We apologize for the inconvenience, but you can still find our donuts at Colorado Tea Station or Kung Fu Tea Aurora! Thank you for your continued support 💜</div>
         {/* <img className='logo' src={logo} alt="Jada's Mochi Donuts Logo"/> */}
         <main>{children}</main>
         <footer style={{ fontSize: '8pt', marginTop: `1.5rem`,  position: `relative`, opacity: '0.5' }}>
