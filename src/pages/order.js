@@ -27,6 +27,7 @@ const Order = () => {
         </div>
         {!drawer ? <ul className='body__info--list'>
           <li className='body__info--list--items'>$22 per dozen <strong>(6 flavors max per dozen)</strong></li>
+          <li className='body__info--list--items'>$30 per holiday box <strong>(pre-selected flavors)</strong></li>
           {/* <li className='body__info--list--items'>$18 per dozen when ordering 2 or more</li> */}
           <li className='body__info--list--items'>Curbside pickup is free (Southeast Aurora)</li>
           <li className='body__info--list--items'>Delivery fee of $4 - $8 will apply depending on location <strong>with a max 10 mile radius delivery distance from SE Aurora</strong></li>
@@ -60,9 +61,13 @@ const Order = () => {
           <div className='order__holder--label'>Quantity:</div>
           <select className='order__holder--dropdown' name="quantity" required>
             <option value="1 dozen">1 dozen</option>
-            <option value="2 dozens">2 dozen</option>
-            <option value="3 dozens">3 dozen</option>
-            <option value="4+ dozens">4+ dozen (specify amount below)</option>
+            <option value="2 dozen">2 dozen</option>
+            <option value="3 dozen">3 dozen</option>
+            <option value="4+ dozen">4+ dozen (specify amount below)</option>
+            <option value="1 box">1 holiday box</option>
+            <option value="2 boxes">2 holiday boxes</option>
+            <option value="3 boxes">3 holiday boxes</option>
+            <option value="4+ boxes">4+ holiday boxes (specify amount below)</option>
           </select>
         </div>
         <div>
