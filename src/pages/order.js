@@ -64,10 +64,10 @@ const Order = () => {
             <option value="2 dozen">2 dozen</option>
             <option value="3 dozen">3 dozen</option>
             <option value="4+ dozen">4+ dozen (specify amount below)</option>
-            {/* <option value="1 box">1 holiday box</option>
+            <option value="1 box">1 holiday box</option>
             <option value="2 boxes">2 holiday boxes</option>
             <option value="3 boxes">3 holiday boxes</option>
-            <option value="4+ boxes">4+ holiday boxes (specify amount below)</option> */}
+            <option value="4+ boxes">4+ holiday boxes (specify amount below)</option>
           </select>
         </div>
         <div>
